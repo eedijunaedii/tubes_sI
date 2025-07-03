@@ -1,0 +1,95 @@
+/* styles.css */
+/* Custom Theme Colors */
+.bg-1 { background-color: #15b8fc; }
+.bg-2 { background-color: #6ccffc; }
+.bg-3 { background-color: #0773c4; }
+.bg-4 { background-color: #016b97; }
+.bg-5 { background-color: #c4dce4; }
+.bg-6 { background-color: #055693; }
+
+.warna-1 { color: #15b8fc; }
+.warna-2 { color: white; }
+.warna-3 { color: #016b97; }
+
+.active-bar {
+  color: black;
+  background-color: white;
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+.btnInput {
+  width: 170px;
+}
+
+/* Wrapper and Sidebar */
+#wrapper {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+#sidebar-wrapper {
+  width: 16rem;
+  background: #343a40;
+  margin-left: -16rem;
+  transition: margin 0.25s ease-out;
+}
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+#sidebar-wrapper .list-group {
+  width: 16rem;
+}
+#page-content-wrapper {
+  min-width: 100vw;
+}
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+.list-group-item.active {
+  background-color: transparent;
+  color: #276678;
+  font-weight: bold;
+  border: none;
+}
+.list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -16rem;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* Status Cards */
+.status-card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.status-card .card-title {
+  font-size: 2rem;
+}
+.status-card .card-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.status-icon {
+  font-size: 2.5rem;
+}
