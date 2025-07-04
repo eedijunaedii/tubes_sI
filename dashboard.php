@@ -55,7 +55,6 @@ require './proses/F_index.php';
                 <!-- Page Content -->
                 <div class="row my-5">
                     <h3 class="fs-4 mb-3">Selamat Datang <?php echo $rowSession['nama'] ?></h3>
-                    <div id="grafik_laptop"></div>
                 </div>
             </div>
         </div>

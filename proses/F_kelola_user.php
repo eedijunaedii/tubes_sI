@@ -1,7 +1,7 @@
 <?php
     require './connection/koneksi.php';
     require 'session.php';
-//Read Data Laptop
+//Read Data Produk
     $queryRead = mysqli_query($koneksi, "SELECT * FROM user");
 //Create Data User
     if(isset($_POST["createUser"])){
@@ -69,7 +69,7 @@
             }
         }
     }
-//Delete Data Laptop
+//Delete Data Produk
     if(isset($_POST["hapusUser"])){
         $id_user = $_POST['id_user'];
         $queryHapus = mysqli_query($koneksi, "DELETE FROM user WHERE id_user = '$id_user'") or die($koneksi);

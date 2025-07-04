@@ -2,7 +2,7 @@
     require './connection/koneksi.php';
     require 'session.php';
     
-//Read Data Laptop
+//Read Data Produk
     $queryRead = mysqli_query($koneksi, "SELECT id_produk, merek, nama, stok FROM data_produk");
 //Read id_produk
     $queryID = mysqli_query($koneksi, "SELECT id_produk FROM data_produk");
