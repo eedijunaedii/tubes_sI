@@ -7,9 +7,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="text-center">
-                        <img src="./gambarLaptop/<?php echo $gambar[$i] ?>" style="height: 150px;">
-                    </div>
                     <div class="invisible position-absolute">
                         <input type="text" class="form-control" name="id_produk" value="<?php echo $id_produk[$i] ?>" readonly>
                     </div>
@@ -36,7 +33,7 @@
                         </div>
                         <div class="col px-auto mx-2">
                             <label for="firstName" class="form-label">Harga</label>
-                            <input type="number" class="form-control" value="Rp. <?php echo number_format($harga[$i], 0, ',', '.')?>" readonly>
+                            <input type="text" class="form-control" value="Rp. <?php echo number_format($harga[$i], 0, ',', '.')?>" readonly>
                         </div>    
                     </div> 
                     <div class="row my-2">
@@ -45,12 +42,6 @@
                             <input type="text" class="form-control" value="<?php echo $deskripsi[$i] ?>" readonly>
                         </div>   
                     </div>  
-                    <div class="row py-1">
-                            <div class="col-5 mt-1"><label>Gambar Produk</label></div>
-                            <div class=col>
-                                <input type="file" class="form-control form-box" name="gambar_produk">
-                            </div>
-                        </div>
                     <div class="row mt-3">  
                         <div class="col-md-12 d-flex justify-content-end">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -137,9 +128,6 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="text-center">
-                            <img src="./gambarLaptop/<?php echo $gambar[$i] ?>" style="height: 150px;">
-                        </div>
                         <div class="invisible position-absolute">
                             <input type="text" class="form-control" name="id_produk" value="<?php echo $id_produk[$i] ?>">
                         </div>
@@ -172,7 +160,7 @@
                             </div>   
                             <div class="col px-auto mx-2">
                                 <label for="firstName" class="form-label">Deskripsi</label>
-                                <input type="text" name="size_storage" class="form-control" value="<?php echo $deskripsi[$i] ?>">
+                                <input type="text" name="deskripsi" class="form-control" value="<?php echo $deskripsi[$i] ?>">
                             </div>
                         </div>  
                         <div class="row mt-3">  
@@ -212,7 +200,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          Hapus data <?php echo $id_produk[$i] ?>?
+          Hapus produk <?php echo $nama[$i] ?>?
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>

@@ -58,7 +58,7 @@ if (isset($_POST['editData'])) {
 
     if ($update) {
         echo "<script>
-            alert('Data $id_produk berhasil diupdate!');
+            alert('Data $nama berhasil diupdate!');
             window.location.replace('data_produk.php');
         </script>";
     }

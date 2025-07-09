@@ -7,7 +7,7 @@
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <li>
             <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit<?php echo $id_user ?>">
-            <i class="fas fa-cog me-3"></i>Setting</button>
+            <i class="fas fa-cog me-3"></i>Ubah Password</button>
         </li>
         <div class="dropdown-divider"></div>
         <li><a class="dropdown-item text-danger" href="/sistem_vapestore/logout.php" name="logout"><i class="fas fa-sign-out-alt me-3"></i>Logout</a></li>

@@ -14,8 +14,6 @@
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-light py-4 px-4">
                 <div class="d-flex align-items-center me-auto">
-                    <i class="fas fa-align-left fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="fs-2 m-0">Menu</h2>
                 </div>
                 <?php include 'header.php'; ?>
             </nav>

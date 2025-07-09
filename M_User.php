@@ -89,13 +89,7 @@
                                 <label for="firstName" class="form-label">No HP</label>
                                 <input type="number" name="no_hp" class="form-control" value="<?php echo $row['no_hp'] ?>">
                             </div>
-                        </div> 
-                        <div class="row my-2">
-                            <div class="col px-auto mx-2">
-                                <label for="firstName" class="form-label">Password</label>
-                                <input type="password" name="password" class="form-control" placeholder="Opsional">
-                            </div>
-                        </div>  
+                        </div>   
                         <div class="row mt-3">  
                             <div class="col-md-12 d-flex justify-content-end">
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#alertEditUser<?php echo $row['id_user'] ?>">Simpan</button>
@@ -136,7 +130,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Hapus data <?php echo $row['id_user'] ?> ?<br>
+                        Hapus user <?php echo $row['nama'] ?> ?<br>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
